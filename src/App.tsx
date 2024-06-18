@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DrawerProps } from "@fluentui/react-components";
 import PersonalCard from "./PersonalCard";
 import {
-  Hamburger, NavCategory, NavCategoryItem, NavDrawer, NavDrawerBody, NavDrawerHeader, NavDrawerProps,
+  Hamburger, NavCategory, NavCategoryItem, NavDrawer, NavDrawerBody, NavDrawerHeader,
   NavItem, NavSectionHeader, NavSubItem, NavSubItemGroup
 } from "@fluentui/react-nav-preview";
 
@@ -62,7 +62,7 @@ const Reports = bundleIcon(
 
 type DrawerType = Required<DrawerProps>["type"];
 
-function App(props: Partial<NavDrawerProps>) {
+function App() {
   const styles = useStyles();
   const labelId = useId("type-label");
   const [isOpen, setIsOpen] = React.useState(true);
